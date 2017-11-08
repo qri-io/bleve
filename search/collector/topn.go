@@ -17,8 +17,8 @@ package collector
 import (
 	"time"
 
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/search"
 	"golang.org/x/net/context"
 )
 

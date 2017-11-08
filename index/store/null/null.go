@@ -15,8 +15,8 @@
 package null
 
 import (
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/qri-io/bleve/index/store"
+	"github.com/qri-io/bleve/registry"
 )
 
 const Name = "null"

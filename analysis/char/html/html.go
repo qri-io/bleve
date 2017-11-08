@@ -17,9 +17,9 @@ package html
 import (
 	"regexp"
 
-	"github.com/blevesearch/bleve/analysis"
-	regexpCharFilter "github.com/blevesearch/bleve/analysis/char/regexp"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/qri-io/bleve/analysis"
+	regexpCharFilter "github.com/qri-io/bleve/analysis/char/regexp"
+	"github.com/qri-io/bleve/registry"
 )
 
 const Name = "html"

@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blevesearch/bleve/mapping"
-	"github.com/blevesearch/bleve/search"
-	"github.com/blevesearch/bleve/search/highlight/highlighter/ansi"
+	"github.com/qri-io/bleve/mapping"
+	"github.com/qri-io/bleve/search"
+	"github.com/qri-io/bleve/search/highlight/highlighter/ansi"
 )
 
 var indexMapping mapping.IndexMapping

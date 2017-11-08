@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/geo"
+	"github.com/qri-io/bleve/analysis"
+	"github.com/qri-io/bleve/document"
+	"github.com/qri-io/bleve/geo"
 )
 
 // control the default behavior for dynamic fields (those not explicitly mapped)

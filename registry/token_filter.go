@@ -17,7 +17,7 @@ package registry
 import (
 	"fmt"
 
-	"github.com/blevesearch/bleve/analysis"
+	"github.com/qri-io/bleve/analysis"
 )
 
 func RegisterTokenFilter(name string, constructor TokenFilterConstructor) {

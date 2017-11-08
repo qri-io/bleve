@@ -14,7 +14,7 @@
 
 package metrics
 
-import "github.com/blevesearch/bleve/index/store"
+import "github.com/qri-io/bleve/index/store"
 
 type Batch struct {
 	s *Store

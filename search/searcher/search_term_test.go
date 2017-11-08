@@ -18,11 +18,11 @@ import (
 	"math"
 	"testing"
 
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/index/store/gtreap"
-	"github.com/blevesearch/bleve/index/upsidedown"
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/document"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/index/store/gtreap"
+	"github.com/qri-io/bleve/index/upsidedown"
+	"github.com/qri-io/bleve/search"
 )
 
 func TestTermSearcher(t *testing.T) {

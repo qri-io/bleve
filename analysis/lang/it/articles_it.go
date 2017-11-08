@@ -1,8 +1,8 @@
 package it
 
 import (
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/qri-io/bleve/analysis"
+	"github.com/qri-io/bleve/registry"
 )
 
 const ArticlesName = "articles_it"

@@ -21,11 +21,11 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/bleve/mapping"
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/document"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/index/store"
+	"github.com/qri-io/bleve/mapping"
+	"github.com/qri-io/bleve/search"
 )
 
 type indexAliasImpl struct {

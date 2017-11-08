@@ -15,7 +15,7 @@
 package test
 
 import (
-	"github.com/blevesearch/bleve"
+	"github.com/qri-io/bleve"
 )
 
 type SearchTest struct {

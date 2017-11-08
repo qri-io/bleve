@@ -28,9 +28,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/bleve/registry"
 	"github.com/boltdb/bolt"
+	"github.com/qri-io/bleve/index/store"
+	"github.com/qri-io/bleve/registry"
 )
 
 const (

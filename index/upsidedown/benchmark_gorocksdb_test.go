@@ -19,7 +19,7 @@ package upsidedown
 import (
 	"testing"
 
-	"github.com/blevesearch/blevex/rocksdb"
+	"github.com/qri-io/blevex/rocksdb"
 )
 
 var rocksdbTestOptions = map[string]interface{}{

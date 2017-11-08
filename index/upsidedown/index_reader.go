@@ -15,9 +15,9 @@
 package upsidedown
 
 import (
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/index/store"
+	"github.com/qri-io/bleve/document"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/index/store"
 )
 
 type IndexReader struct {

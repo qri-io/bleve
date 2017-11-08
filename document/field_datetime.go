@@ -19,8 +19,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/numeric"
+	"github.com/qri-io/bleve/analysis"
+	"github.com/qri-io/bleve/numeric"
 )
 
 const DefaultDateTimeIndexingOptions = StoreField | IndexField

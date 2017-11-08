@@ -19,8 +19,8 @@ import (
 	"sort"
 	"sync/atomic"
 
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/index/store"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/index/store"
 )
 
 type UpsideDownCouchTermFieldReader struct {

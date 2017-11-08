@@ -15,8 +15,8 @@
 package boltdb
 
 import (
-	"github.com/blevesearch/bleve/index/store"
 	"github.com/boltdb/bolt"
+	"github.com/qri-io/bleve/index/store"
 )
 
 type Reader struct {

@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/search"
 )
 
 func TestSearchResultString(t *testing.T) {
@@ -202,7 +202,7 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Date_Range_Success_With_StartEnd",
 				Size:  1,
 				DateTimeRanges: []*dateTimeRange{
-					&dateTimeRange{Name: "testName", Start: time.Unix(0, 0), End: time.Now()},
+					{Name: "testName", Start: time.Unix(0, 0), End: time.Now()},
 				},
 			},
 			result: nil,
@@ -212,7 +212,7 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Date_Range_Success_With_Start",
 				Size:  1,
 				DateTimeRanges: []*dateTimeRange{
-					&dateTimeRange{Name: "testName", Start: time.Unix(0, 0)},
+					{Name: "testName", Start: time.Unix(0, 0)},
 				},
 			},
 			result: nil,
@@ -222,7 +222,7 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Date_Range_Success_With_End",
 				Size:  1,
 				DateTimeRanges: []*dateTimeRange{
-					&dateTimeRange{Name: "testName", End: time.Now()},
+					{Name: "testName", End: time.Now()},
 				},
 			},
 			result: nil,
@@ -232,7 +232,7 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Numeric_Range_Success_With_MinMax",
 				Size:  1,
 				NumericRanges: []*numericRange{
-					&numericRange{Name: "testName", Min: &value, Max: &value},
+					{Name: "testName", Min: &value, Max: &value},
 				},
 			},
 			result: nil,
@@ -242,7 +242,7 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Numeric_Range_Success_With_Min",
 				Size:  1,
 				NumericRanges: []*numericRange{
-					&numericRange{Name: "testName", Min: &value},
+					{Name: "testName", Min: &value},
 				},
 			},
 			result: nil,
@@ -252,7 +252,7 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Numeric_Range_Success_With_Max",
 				Size:  1,
 				NumericRanges: []*numericRange{
-					&numericRange{Name: "testName", Max: &value},
+					{Name: "testName", Max: &value},
 				},
 			},
 			result: nil,
@@ -262,9 +262,9 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Date_Range_Missing_Failure",
 				Size:  1,
 				DateTimeRanges: []*dateTimeRange{
-					&dateTimeRange{Name: "testName2", Start: time.Unix(0, 0)},
-					&dateTimeRange{Name: "testName1", End: time.Now()},
-					&dateTimeRange{Name: "testName"},
+					{Name: "testName2", Start: time.Unix(0, 0)},
+					{Name: "testName1", End: time.Now()},
+					{Name: "testName"},
 				},
 			},
 			result: drMissingErr,
@@ -274,9 +274,9 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Numeric_Range_Missing_Failure",
 				Size:  1,
 				NumericRanges: []*numericRange{
-					&numericRange{Name: "testName2", Min: &value},
-					&numericRange{Name: "testName1", Max: &value},
-					&numericRange{Name: "testName"},
+					{Name: "testName2", Min: &value},
+					{Name: "testName1", Max: &value},
+					{Name: "testName"},
 				},
 			},
 			result: nrMissingErr,
@@ -286,10 +286,10 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Numeric_And_DateRanges_Failure",
 				Size:  1,
 				NumericRanges: []*numericRange{
-					&numericRange{Name: "testName", Max: &value},
+					{Name: "testName", Max: &value},
 				},
 				DateTimeRanges: []*dateTimeRange{
-					&dateTimeRange{Name: "testName", End: time.Now()},
+					{Name: "testName", End: time.Now()},
 				},
 			},
 			result: drNrErr,
@@ -299,8 +299,8 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Numeric_Range_Name_Repeat_Failure",
 				Size:  1,
 				NumericRanges: []*numericRange{
-					&numericRange{Name: "testName", Min: &value},
-					&numericRange{Name: "testName", Max: &value},
+					{Name: "testName", Min: &value},
+					{Name: "testName", Max: &value},
 				},
 			},
 			result: nrNameDupErr,
@@ -310,8 +310,8 @@ func TestFacetNumericDateRangeRequests(t *testing.T) {
 				Field: "Date_Range_Name_Repeat_Failure",
 				Size:  1,
 				DateTimeRanges: []*dateTimeRange{
-					&dateTimeRange{Name: "testName", Start: time.Unix(0, 0)},
-					&dateTimeRange{Name: "testName", End: time.Now()},
+					{Name: "testName", Start: time.Unix(0, 0)},
+					{Name: "testName", End: time.Now()},
 				},
 			},
 			result: drNameDupErr,

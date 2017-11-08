@@ -17,5 +17,5 @@
 package config
 
 import (
-	_ "github.com/blevesearch/blevex/lang/ja"
+	_ "github.com/qri-io/blevex/lang/ja"
 )

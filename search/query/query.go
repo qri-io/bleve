@@ -20,9 +20,9 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/mapping"
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/mapping"
+	"github.com/qri-io/bleve/search"
 )
 
 var logger = log.New(ioutil.Discard, "bleve mapping ", log.LstdFlags)

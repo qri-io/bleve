@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/search"
 )
 
 type PhraseSearcher struct {

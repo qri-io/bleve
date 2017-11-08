@@ -17,7 +17,7 @@ package null
 import (
 	"testing"
 
-	"github.com/blevesearch/bleve/index/store"
+	"github.com/qri-io/bleve/index/store"
 )
 
 func TestStore(t *testing.T) {

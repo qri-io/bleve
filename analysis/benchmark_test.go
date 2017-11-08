@@ -17,9 +17,9 @@ package analysis_test
 import (
 	"testing"
 
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/analysis/analyzer/standard"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/qri-io/bleve/analysis"
+	"github.com/qri-io/bleve/analysis/analyzer/standard"
+	"github.com/qri-io/bleve/registry"
 )
 
 func BenchmarkAnalysis(b *testing.B) {

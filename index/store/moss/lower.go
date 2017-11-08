@@ -25,8 +25,8 @@ import (
 
 	"github.com/couchbase/moss"
 
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/qri-io/bleve/index/store"
+	"github.com/qri-io/bleve/registry"
 )
 
 func initLowerLevelStore(
@@ -321,7 +321,7 @@ func (llss *llSnapshot) decRef() {
 func (llss *llSnapshot) ChildCollectionNames() ([]string, error) {
 	var childCollections = make([]string, len(llss.childSnapshots))
 	idx := 0
-	for name, _ := range llss.childSnapshots {
+	for name := range llss.childSnapshots {
 		childCollections[idx] = name
 		idx++
 	}

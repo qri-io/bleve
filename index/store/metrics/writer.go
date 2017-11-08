@@ -17,7 +17,7 @@ package metrics
 import (
 	"fmt"
 
-	"github.com/blevesearch/bleve/index/store"
+	"github.com/qri-io/bleve/index/store"
 )
 
 type Writer struct {

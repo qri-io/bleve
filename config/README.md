@@ -7,5 +7,5 @@
 A general purpose application, that must allow users to express the need for Bleve components at runtime can accomplish this by:
 
 ```
-import _ "github.com/blevesearch/bleve/config"
+import _ "github.com/qri-io/bleve/config"
 ```

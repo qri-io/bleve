@@ -17,7 +17,7 @@ package searcher
 import (
 	"testing"
 
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/search"
 )
 
 func TestMatchNoneSearch(t *testing.T) {

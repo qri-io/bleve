@@ -17,8 +17,8 @@ package searcher
 import (
 	"regexp"
 
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/search"
 )
 
 // NewRegexpSearcher creates a searcher which will match documents that

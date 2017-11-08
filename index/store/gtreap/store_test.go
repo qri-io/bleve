@@ -17,8 +17,8 @@ package gtreap
 import (
 	"testing"
 
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/bleve/index/store/test"
+	"github.com/qri-io/bleve/index/store"
+	"github.com/qri-io/bleve/index/store/test"
 )
 
 func open(t *testing.T, mo store.MergeOperator) store.KVStore {

@@ -19,7 +19,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/blevesearch/bleve/index/store"
+	"github.com/qri-io/bleve/index/store"
 )
 
 // tests which focus on the byte ownership

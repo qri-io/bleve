@@ -17,7 +17,7 @@ package document
 import (
 	"fmt"
 
-	"github.com/blevesearch/bleve/analysis"
+	"github.com/qri-io/bleve/analysis"
 )
 
 const DefaultBooleanIndexingOptions = StoreField | IndexField

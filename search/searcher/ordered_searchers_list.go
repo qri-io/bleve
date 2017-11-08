@@ -15,7 +15,7 @@
 package searcher
 
 import (
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/search"
 )
 
 type OrderedSearcherList []search.Searcher

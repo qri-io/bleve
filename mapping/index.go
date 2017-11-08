@@ -18,11 +18,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/blevesearch/bleve/analysis"
-	"github.com/blevesearch/bleve/analysis/analyzer/standard"
-	"github.com/blevesearch/bleve/analysis/datetime/optional"
-	"github.com/blevesearch/bleve/document"
-	"github.com/blevesearch/bleve/registry"
+	"github.com/qri-io/bleve/analysis"
+	"github.com/qri-io/bleve/analysis/analyzer/standard"
+	"github.com/qri-io/bleve/analysis/datetime/optional"
+	"github.com/qri-io/bleve/document"
+	"github.com/qri-io/bleve/registry"
 )
 
 var MappingJSONStrict = false
@@ -100,15 +100,15 @@ func (im *IndexMappingImpl) AddCustomTokenFilter(name string, config map[string]
 // returned analyzer is registered in the IndexMapping.
 //
 // bleve comes with predefined analyzers, like
-// github.com/blevesearch/bleve/analysis/analyzers/custom_analyzer. They are
+// github.com/qri-io/bleve/analysis/analyzers/custom_analyzer. They are
 // available only if their package is imported by client code. To achieve this,
 // use their metadata to fill configuration entries:
 //
 //   import (
-//       "github.com/blevesearch/bleve/analysis/analyzers/custom_analyzer"
-//       "github.com/blevesearch/bleve/analysis/char_filters/html_char_filter"
-//       "github.com/blevesearch/bleve/analysis/token_filters/lower_case_filter"
-//       "github.com/blevesearch/bleve/analysis/tokenizers/unicode"
+//       "github.com/qri-io/bleve/analysis/analyzers/custom_analyzer"
+//       "github.com/qri-io/bleve/analysis/char_filters/html_char_filter"
+//       "github.com/qri-io/bleve/analysis/token_filters/lower_case_filter"
+//       "github.com/qri-io/bleve/analysis/tokenizers/unicode"
 //   )
 //
 //   m := bleve.NewIndexMapping()

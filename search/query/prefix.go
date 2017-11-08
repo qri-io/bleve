@@ -15,10 +15,10 @@
 package query
 
 import (
-	"github.com/blevesearch/bleve/index"
-	"github.com/blevesearch/bleve/mapping"
-	"github.com/blevesearch/bleve/search"
-	"github.com/blevesearch/bleve/search/searcher"
+	"github.com/qri-io/bleve/index"
+	"github.com/qri-io/bleve/mapping"
+	"github.com/qri-io/bleve/search"
+	"github.com/qri-io/bleve/search/searcher"
 )
 
 type PrefixQuery struct {

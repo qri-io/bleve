@@ -17,5 +17,5 @@
 package config
 
 import (
-	_ "github.com/blevesearch/blevex/rocksdb"
+	_ "github.com/qri-io/blevex/rocksdb"
 )

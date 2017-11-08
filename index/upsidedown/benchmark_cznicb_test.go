@@ -19,8 +19,8 @@ package upsidedown
 import (
 	"testing"
 
-	"github.com/blevesearch/bleve/index/store"
-	"github.com/blevesearch/blevex/cznicb"
+	"github.com/qri-io/bleve/index/store"
+	"github.com/qri-io/blevex/cznicb"
 )
 
 func CreateCznicB() (store.KVStore, error) {

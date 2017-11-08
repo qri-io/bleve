@@ -17,7 +17,7 @@ package search
 import (
 	"sort"
 
-	"github.com/blevesearch/bleve/index"
+	"github.com/qri-io/bleve/index"
 )
 
 type FacetBuilder interface {

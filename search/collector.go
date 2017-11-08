@@ -17,7 +17,7 @@ package search
 import (
 	"time"
 
-	"github.com/blevesearch/bleve/index"
+	"github.com/qri-io/bleve/index"
 
 	"golang.org/x/net/context"
 )

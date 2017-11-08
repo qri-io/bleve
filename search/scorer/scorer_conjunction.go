@@ -15,7 +15,7 @@
 package scorer
 
 import (
-	"github.com/blevesearch/bleve/search"
+	"github.com/qri-io/bleve/search"
 )
 
 type ConjunctionQueryScorer struct {
